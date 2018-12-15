@@ -422,11 +422,11 @@ static void Init_GPIO(void) {
 void StartDefaultTask(void const * argument) {
 	MX_USB_HOST_Init();
 
-	HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_11);
+	//HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_11);
 
 	for (;;) {
 		HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_15);
-		HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_11);
+		//HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_11);
 		osDelay(1000);
 	}
 }
